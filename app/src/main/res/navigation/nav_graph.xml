@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.uzb7.beelineuzbekistan.ui.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/xarajatlarFragment"
+        android:name="com.uzb7.beelineuzbekistan.ui.fragment.XarajatlarFragment"
+        android:label="fragment_xarajatlar"
+        tools:layout="@layout/fragment_xarajatlar" />
+    <fragment
+        android:id="@+id/narxlarFragment"
+        android:name="com.uzb7.beelineuzbekistan.ui.fragment.NarxlarFragment"
+        android:label="fragment_narxlar"
+        tools:layout="@layout/fragment_narxlar" />
+    <fragment
+        android:id="@+id/beelineClubFragment"
+        android:name="com.uzb7.beelineuzbekistan.ui.fragment.BeelineClubFragment"
+        android:label="fragment_beeline_club"
+        tools:layout="@layout/fragment_beeline_club" />
+    <fragment
+        android:id="@+id/yordamFragment"
+        android:name="com.uzb7.beelineuzbekistan.ui.fragment.YordamFragment"
+        android:label="fragment_yordam"
+        tools:layout="@layout/fragment_yordam" />
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.uzb7.beelineuzbekistan.ui.fragment.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+</navigation>
